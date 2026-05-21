@@ -10,6 +10,8 @@ model = ChatGroq(model ="openai/gpt-oss-20b" , temperature=0.8)
 
 result = model.invoke("write five line poem on current status of nepal  " )
 
-print(result.content)
+# print(result)  # gives metadata too 
+print(result.content) # gives only asked content
+
 
 
